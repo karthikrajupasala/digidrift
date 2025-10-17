@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digidrift | Grow Your Brand Effortlessly</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0a0a;
+            color: #fff;
+        }
+        a { text-decoration: none; }
+        h1, h2, h3 { margin: 0 0 10px 0; }
+
+        /* Header / Hero */
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #ff1493, #ff69b4);
+        }
+        header h1 {
+            font-size: 2.8em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 15px 0 30px;
+        }
+        .btn {
+            background: #ff1493;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 10px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff69b4;
+        }
+
+        /* Video Section */
+        .hero-video {
+            width: 80%;
+            max-width: 700px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .features, .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            flex: 1 1 250px;
+            background: #1a1a1a;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 20, 147, 0.5);
+        }
+        .card h3 { color: #ff1493; }
+        .card p { color: #ddd; }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            font-size: 1em;
+        }
+        .contact-form button {
+            background: #ff1493;
+            color: #fff;
+            padding: 15px;
+            font-size: 1em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact-form button:hover { background: #ff69b4; }
+
+        /* Footer */
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        footer a { color: #ff1493; margin: 0 10px; transition: 0.3s; }
+        footer a:hover { color: #ff69b4; }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2em; }
+            .features, .benefits { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Grow Your Brand Effortlessly with Digidrift</h1>
+        <p>Affordable, subscription-based marketing services for startups, SMBs, and freelancers.</p>
+        <a href="#contact" class="btn">Get Started</a>
+        <a href="#demo" class="btn">Request Demo</a>
+        <video class="hero-video" controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2 style="text-align:center;">Our Services</h2>
+        <div class="features">
+            <div class="card">
+                <h3>Social Media Management</h3>
+                <p>Professional content posting, scheduling, and engagement across platforms.</p>
+            </div>
+            <div class="card">
+                <h3>Content Creation</h3>
+                <p>Graphics, videos, and copywriting tailored to your brand’s voice.</p>
+            </div>
+            <div class="card">
+                <h3>Branding & Design</h3>
+                <p>Logo, visual identity, and consistent branding for all channels.</p>
+            </div>
+            <div class="card">
+                <h3>Analytics & Insights</h3>
+                <p>Track performance and optimize campaigns with data-driven insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <h2 style="text-align:center;">Why Choose Digidrift?</h2>
+        <div class="benefits">
+            <div class="card">
+                <h3>Consistent Branding</h3>
+                <p>Maintain a professional and unified brand presence online.</p>
+            </div>
+            <div class="card">
+                <h3>Cost-Effective</h3>
+                <p>Affordable subscription plans that save time and money.</p>
+            </div>
+            <div class="card">
+                <h3>Focus on Growth</h3>
+                <p>We handle marketing so you can focus on your business.</p>
+            </div>
+            <div class="card">
+                <h3>Data-Driven</h3>
+                <p>Insights and analytics help you make informed decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="demo" style="text-align:center;">
+        <h2>Ready to Grow Your Brand?</h2>
+        <a href="#contact" class="btn">Start Today</a>
+        <a href="#contact" class="btn">Request a Demo</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 style="text-align:center;">Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p style="text-align:center; margin-top:20px;">
+            Follow us: 
+            <a href="https://instagram.com/digidrift" target="_blank">Instagram</a> | 
+            <a href="https://linkedin.com/company/digidrift" target="_blank">LinkedIn</a> | 
+            <a href="https://youtube.com/@digidrift" target="_blank">YouTube</a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Digidrift. All rights reserved.
+    </footer>
+
+</body>
+</html>
